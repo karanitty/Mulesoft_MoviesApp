@@ -10,4 +10,4 @@ run: npm install
      npm start
 
 # Heroku Deployment Link
-**  **
+** https://git.heroku.com/karan-movies-app.git **
