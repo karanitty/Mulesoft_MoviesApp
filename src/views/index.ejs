@@ -10,13 +10,13 @@
     <title>Movies</title>
     <style>
         body{
-            background-color: #A9C9FF;
-            background-image: linear-gradient(150deg, #A9C9FF 0%, #FFBBEC 100%);
+            /* background-color: #262d38; */
+            background-image: linear-gradient(150deg, #a0b8df 100%, #FFBBEC 0%);
         }        
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Movies</h1>
+    <h1 style="text-align: center;">Movies App</h1>
     <div class="container">
         <div class="row">
             <div class="operations col-md-4 ">
@@ -25,7 +25,7 @@
                 <br>
                 <div class="card" id="form" style="display:none;"">
                     <div class="card-header">
-                        <h4>Enter Data</h4>
+                        <h4>Enter Movie Details</h4>
                     </div>
                     <div class="card-body">
                         <form action="/addData" method="POST"  onsubmit="alert('Data Added')">
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="display-data col-md-8">
-                <h3 style="text-align: center;">Movies Table</h3>
+                <!-- <h3 style="text-align: center;">Movies Table</h3> --><br><br><br>
                 <h4 style="display: inline-block;">View All:</h4><button class="btn btn-success mx-2" style="display: inline-block;" onclick="location.href='/getAll'">Submit</button>
                 <br>
                 <h4 style="display: inline-block;">View based on:</h4>
@@ -59,8 +59,8 @@
                         <option value="year">Release Year</option>
                     </select>
                     <strong><label for="">Search Value:</label></strong> <input required  type="text" name="val" id=""> <button class="btn btn-success">Submit</button>                 
-                </form>
-                <table class="table table-light table table-bordered">
+                </form><br><br>
+                <table class="table table-bordered">
                     <thead class="thead-dark">
                         <tr>
                             <th>*</th>
